@@ -46,7 +46,15 @@ li {
     margin: 0;
     padding: 0;
 }
-
+.common_head{
+    position: relative;
+}
+.common_head .line {
+    position: absolute;
+    right: 140px;
+    bottom: 15%;
+    transform: translateY(-50%);
+}
 .common_head span {
     font-size: 12px;
     color: var(--primary-color);
@@ -121,16 +129,42 @@ li {
 #main_menu .navbar-nav .nav-item .nav-link {
     padding: 4px 16px;
     font-size: 16px;
-    border: 1px solid transparent;
     color: var(--gray-medium-color);
     text-transform: capitalize;
     border-radius: 25px;
     font-weight: 500;
     transform: scale(1);
     transition: all linear .3s;
+    position: relative;
 }
 
-#main_menu .navbar-nav .nav-item .nav-link:hover {
+#main_menu .navbar-nav .nav-item .nav-link::before,
+#main_menu .navbar-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid transparent;
+    transition: all linear .3s;
+}
+
+#main_menu .navbar-nav .nav-item .nav-link::before {
+    bottom: 0;
+    left: 0;
+    border-right: none;
+    border-top: none;
+}
+
+#main_menu .navbar-nav .nav-item .nav-link::after {
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+}
+
+#main_menu .navbar-nav .nav-item .nav-link:hover,
+#main_menu .navbar-nav .nav-item .nav-link:hover::before,
+#main_menu .navbar-nav .nav-item .nav-link:hover::after {
     border-color: var(--secondary-color);
     color: var(--secondary-color);
     transform: scale(1.1);
@@ -163,7 +197,7 @@ li {
 #bs .bs_content .bs_items::after {
     position: absolute;
     content: '';
-    background: linear-gradient(to right, #0093ED00, #0093ED);
+    background: linear-gradient(90deg, rgba(0, 147, 237, 0.5) 0%, rgba(0, 147, 237, 0) 80%);
     top: 0;
     left: 0;
     width: 100%;
@@ -213,6 +247,24 @@ li {
 /* ==================  Experience  ================== */
 #experience {
     padding: 140px 0 70px 0;
+    position: relative;
+    z-index: 0;
+}
+
+#experience .ovrly_vector {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#experience .ovrly_vector img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 #experience .experience_left p {
@@ -338,6 +390,24 @@ li {
 /* ==================  Service  ================== */
 #service {
     padding: 70px 0;
+    position: relative;
+    z-index: 0;
+}
+
+#service .ovrly_vector {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#service .ovrly_vector img {
+    width: 100%;
+    max-width: 100%;
+    height: 860px;
+    display: block;
 }
 
 #service .service_card {
@@ -346,6 +416,9 @@ li {
 }
 
 #service .service_card .serv_img img {
+    width: 100%;
+    height: 210px;
+    max-width: 100%;
     border-radius: 25px 25px 0 0;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
@@ -378,13 +451,13 @@ li {
     gap: 0 24px;
 }
 
-#service .serv_content .serv_content_footer .serv_title h4 span{
+#service .serv_content .serv_content_footer .serv_title h4 span {
     display: block;
 }
 
 
 #service .service_card:hover .serv_content,
-#service .service_card:hover .serv_img img{
+#service .service_card:hover .serv_img img {
     border-color: var(--secondary-color);
 }
 
@@ -392,4 +465,94 @@ li {
     border-color: #B9D5FC;
     background: var(--secondary-color);
 }
+
+#service .see_more_btn{
+    color: var(--gray-medium-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+#service .see_more_btn i{
+    color: var(--secondary-color);
+}
 /* ==================  Service End  ================== */
+
+
+/* ==================  Work Start  ================== */
+#how_we_work{
+    padding: 120px 0;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F3E6FE 100%);
+    position: relative;
+    z-index: 0;
+}
+
+#how_we_work .ovrly_vector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#how_we_work .ovrly_vector img {
+    width: 100%;
+    max-width: 100%;
+    /* height: 860px; */
+    display: block;
+}
+#how_we_work .arrows i{
+    color: var(--gray-heavy-color);
+    font-size: 25px;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+#how_we_work .arrows i:hover{
+    color: var(--secondary-color);
+    font-size: 25px;
+}
+
+#how_we_work .work-steps .work_card{
+    background: #fff;
+    padding: 24px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    transition: all linear .3s;
+    position: relative;
+}
+#how_we_work .work-steps .work_card .ovrly_vectr{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#how_we_work .work-steps .work_card .icon img{
+    width: 60px;
+}
+#how_we_work .work-steps .work_card .icon {
+    margin-bottom: 10px;
+}
+#how_we_work .work-steps .work_card h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--gray-medium-color);
+    margin-bottom: 10px;
+}
+#how_we_work .work-steps .work_card p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gray-light-color);
+    padding: 10px 0;
+}
+#how_we_work .work-steps .work_card:hover{
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+#how_we_work .work-steps .work_card:hover h5,
+#how_we_work .work-steps .work_card:hover p{
+    color: #fff;
+}
+
+#how_we_work .work-steps .work_card:hover .icon img {
+    filter: brightness(0) invert(1);
+}
+/* ==================  Work End  ================== */
