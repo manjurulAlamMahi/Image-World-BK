@@ -73,6 +73,13 @@ li {
     margin-bottom: 24px;
 }
 
+.common_head p {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray-medium-color);
+    padding: 10px 0;
+}
+
 .common_icon {
     width: 40px;
     height: 40px;
@@ -649,7 +656,7 @@ li {
 /* ==================  Review End  ================== */
 
 /* ==================  Blog Start  ================== */
-#blog{
+#blog {
     padding: 60px 0;
 }
 
@@ -719,3 +726,256 @@ li {
 }
 
 /* ==================  Blog End  ================== */
+
+/* ==================  Trial Start  ================== */
+#trial {
+    padding: 60px 0;
+}
+
+#trial .trail_image img {
+    border-radius: 25px;
+}
+
+.trial_form {
+    max-width: 600px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.trial_form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gray-light-color);
+}
+
+.trial_form input[type="text"],
+.trial_form input[type="email"],
+.trial_form textarea,
+.trial_form select {
+    width: 100%;
+    padding: 15px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background-color: #f1f1f1;
+    border: none;
+    font-size: 16px;
+    color: var(--gray-medium-color);
+}
+
+.trial_form input[type="text"]::placeholder,
+.trial_form input[type="email"]::placeholder,
+.trial_form textarea::placeholder,
+.trial_form select::placeholder {
+    color: var(--gray-light-color);
+}
+
+.trial_form .form_select select {
+    width: 100%;
+    padding-right: 30px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.trial_form .form_select {
+    position: relative;
+}
+
+.trial_form .form_select .arrow {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.trial_form .form_select .arrow i {
+    color: var(--primary-color);
+}
+
+.trial_form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.trial_form .row {
+    display: flex;
+    gap: 16px;
+}
+
+.trial_form .row>div {
+    flex: 1;
+}
+
+.trial_form .file-upload {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 8px;
+    background-color: transparent;
+}
+
+.trial_form .file-upload input[type="file"] {
+    display: none;
+}
+
+.trial_form .upload-icon {
+    font-size: 24px;
+    color: #a259ff;
+    margin-top: 10px;
+}
+
+.trial_form .file-name {
+    display: flex;
+    align-items: center;
+    background: #fef4e7;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #f59e0b;
+}
+
+.trial_form .file-name i {
+    color: #f43f5e;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.trial_form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.trial_form button {
+    background: #a259ff;
+    color: white;
+    padding: 14px 0;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.trial_form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-color);
+    /* Border color */
+    border-radius: 4px;
+    /* Optional rounded corners */
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Show checkmark when checked */
+.trial_form input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.trial_form input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+    /* Checked background */
+}
+
+
+.trial_form button:hover {
+    background: #7b30e1;
+}
+
+/* ==================  Trial End  ================== */
+
+/* ==================  Footer Start  ================== */
+
+#footer {
+    padding: 70px 0 20px 0;
+    background-color: #111827;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+}
+#footer .footer_header{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+#footer .footer_desp p{
+    font-size: 16px;
+    line-height: 30px;
+    padding: 8px 0;
+    color: #fff;
+    font-weight: 400
+}
+
+#footer .footer_quick_menu .footer_menu{
+    columns: 2; /* Split into 2 columns */
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style: none;
+  padding: 0;
+}
+#footer .footer_quick_menu .footer_menu li{
+    break-inside: avoid;
+    padding: 4px 0;
+}
+#footer .footer_quick_menu .footer_menu li a{
+    font-size: 16px;
+    line-height: 30px;
+    padding: 8px 0;
+    color: #fff;
+    font-weight: 400
+}
+#footer .footer_social .footer_social_links li a{
+    font-size: 16px;
+    line-height: 30px;
+    padding: 8px 0;
+    color: #fff;
+    font-weight: 400
+}
+
+#footer .footer_subscription{
+    position: relative;
+}
+#footer .footer_subscription button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid var(--secondary-color);
+    background: #111827;
+    color: var(--secondary-color);
+}
+#footer .footer_subscription input{
+    padding: 15px 25px;
+    background: var(--gray-medium-color);
+    border-radius: 50px;
+    border: 1px solid var(--gray-light-color);
+    color: #fff;
+}
+#footer .footer_subscription input::placeholder{
+    color: #fff;
+}
+
+/* ==================  Footer End  ================== */

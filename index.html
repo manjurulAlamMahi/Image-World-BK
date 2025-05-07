@@ -560,7 +560,8 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="blog_card">
-                                <img src="assets/images/blog/0e2344f166c885c66a81a06a2d4f6b0f45f63828.jpg" alt="Blog Image" class="blog_img">
+                                <img src="assets/images/blog/0e2344f166c885c66a81a06a2d4f6b0f45f63828.jpg"
+                                    alt="Blog Image" class="blog_img">
                                 <div class="blog_content">
                                     <div class="blog_meta">
                                         <span><i class="fa fa-user"></i> The Admin</span>
@@ -577,7 +578,8 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="blog_card">
-                                <img src="assets/images/blog/cfa2dd18cf7241891d018ed20afc5056a1ec802f.jpg" alt="Blog Image" class="blog_img">
+                                <img src="assets/images/blog/cfa2dd18cf7241891d018ed20afc5056a1ec802f.jpg"
+                                    alt="Blog Image" class="blog_img">
                                 <div class="blog_content">
                                     <div class="blog_meta">
                                         <span><i class="fa fa-user"></i> The Admin</span>
@@ -600,11 +602,196 @@
     <!-- ========================================== Blog Part End ================================================= -->
 
 
+    <!-- ========================================== Trial Part Start ================================================= -->
+    <section id="trial">
+        <div class="container">
+            <div class="common_head text-center mb-5">
+                <span>Free Trial</span>
+                <h4 class="m-0 p-0">Get Started With the FREE TRIAL?</h4>
+                <p>Complete the form, upload your images, and complete your free trial project in 1 hour.</p>
+            </div>
+            <div class="mb-3"></div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="trail_image">
+                        <img class="w-100 img-fluid"
+                            src="assets/images/trial/fe301c7b6fd98b935e4f8df8f8ee5d46dd277631.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="trial_form" onsubmit="event.preventDefault()">
+                        <div class="row">
+                            <div>
+                                <label>First name</label>
+                                <input type="text" placeholder="Enter your fast name" />
+                            </div>
+                            <div>
+                                <label>Last name</label>
+                                <input type="text" placeholder="Enter your last name" />
+                            </div>
+                        </div>
+
+                        <label>Select Service</label>
+                        <div class="form_select">
+                            <select>
+                                <option>Select the Service</option>
+                            </select>
+                            <div class="arrow">
+                                <i class="fas fa-long-arrow-down"></i>
+                            </div>
+                        </div>
+
+                        <label>Massage</label>
+                        <textarea placeholder="Enter your massage"></textarea>
+
+                        <label>Mail</label>
+                        <input type="email" placeholder="Enter your mail" />
+
+                        <div class="file-upload my-3" onclick="document.getElementById('fileInput').click();">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="left">
+                                    <p><strong>Drag & Drop Files Here</strong></p>
+                                    <p>or <u>Browse file</u></p>
+                                </div>
+                                <div class="right">
+                                    <div class="upload-icon"><i style="font-size: 60px;"
+                                            class="mdi mdi-cloud-upload-outline"></i></div>
+                                    <input type="file" id="fileInput" onchange="handleFileChange(event)" />
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="fileName" class="file-name" style="display:none;">
+                            📄 One file attached here & file name 01...
+                            <i onclick="removeFile()">🗑️</i>
+                        </div>
+
+                        <div class="checkbox d-flex align-items-center">
+                            <input type="checkbox" class="me-2" id="terms" />
+                            <label class="p-0 m-0" for="terms">I have read and agree to the Terms & Conditions</label>
+                        </div>
+
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== Trial Part End ================================================= -->
+
+
+    <!-- ========================================== Footer Part End ================================================= -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Logo and Contact -->
+                <div class="col-md-5 mb-4 justify-content-center">
+                    <div class="footer_desp">
+                        <a href="#" class="footer_logo"><img width="100px" src="assets/images/site/logo.png" alt=""></a>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                            consequuntur
+                            magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <p><strong>Call:</strong> +880 8888 88888</p>
+                        <p><strong>Mail:</strong> yourmail@mail.com</p>
+                        <p><strong>Location:</strong> Enter your Company address, City, Country name 2024</p>
+                    </div>
+                </div>
+
+                <!-- Company Links -->
+                <div class="col-md-4 mb-4">
+                    <div class="footer_quick_menu">
+                        <h5 class="footer_header">Company</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-3 mb-4">
+                    <div class="footer_social">
+                        <h5 class="footer_header">Social Media</h5>
+                        <ul class="footer_social_links">
+                            <li><a href="#">↗ Facebook</a></li>
+                            <li><a href="#">↗ Tiktok</a></li>
+                            <li><a href="#">↗ Instagram</a></li>
+                            <li><a href="#">↗ LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="bg-secondary">
+
+            <!-- WhatsApp + Email Subscription -->
+            <div class="row align-items-center py-3">
+                <div class="col-md-6 d-flex align-items-center mb-3 mb-md-0 gap-3">
+                    <div class="icon">
+                        <img width="40" src="assets/images/icons/whatsapp.png" alt="">
+                    </div>
+                    <div>
+                        <small class="d-block text-white-50">What's App</small>
+                        <strong>+880 8888 88888</strong>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form class="footer_subscription d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your Mail Address">
+                        <button class="btn btn-outline-info">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="bg-secondary">
+
+            <!-- Bottom Bar -->
+            <div class="d-flex justify-content-between pb-3">
+                <small class="text-white-50">Copy Right ©2025</small>
+                <small class="text-white-50">Design and Developers</small>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================== Footer Part End ================================================= -->
+
+
+
+
     <!-- Scripts Link -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <!-- Scripts Link End-->
+
+    <script>
+        function handleFileChange(event) {
+            const fileInput = event.target;
+            const fileNameDiv = document.getElementById("fileName");
+
+            if (fileInput.files.length > 0) {
+                fileNameDiv.style.display = "flex";
+            }
+        }
+
+        function removeFile() {
+            const fileInput = document.getElementById("fileInput");
+            const fileNameDiv = document.getElementById("fileName");
+
+            fileInput.value = "";
+            fileNameDiv.style.display = "none";
+        }
+    </script>
 
 </body>
 
