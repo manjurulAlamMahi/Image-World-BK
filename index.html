@@ -11,6 +11,9 @@
     <!-- Scripts Link End-->
 
     <!-- Css Links -->
+
+    <!-- Slick slider core CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="assets/css/materialdesignicons-light.min.css">
     <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -416,9 +419,37 @@
                 </div>
             </div>
 
-            <div class="work-steps row justify-content-center">
+            <div class="work-steps d-flex justify-content-center align-items-center gap-3">
                 <!-- Step 1 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="work-items">
+                    <div class="work_card">
+                        <div class="icon">
+                            <img src="assets/images/icons/002-upload.png" alt="Upload Icon">
+                        </div>
+                        <h5>Upload Your All Images</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore.</p>
+                        <div class="ovrly_vectr">
+                            <img src="assets/images/vectors/v-10.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 1 -->
+                <div class="work-items">
+                    <div class="work_card">
+                        <div class="icon">
+                            <img src="assets/images/icons/002-upload.png" alt="Upload Icon">
+                        </div>
+                        <h5>Upload Your All Images</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore.</p>
+                        <div class="ovrly_vectr">
+                            <img src="assets/images/vectors/v-10.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 1 -->
+                <div class="work-items">
                     <div class="work_card">
                         <div class="icon">
                             <img src="assets/images/icons/002-upload.png" alt="Upload Icon">
@@ -433,7 +464,7 @@
                 </div>
 
                 <!-- Step 2 (Active) -->
-                <div class="col-lg-4 col-md-6">
+                <div class="work-items">
                     <div class="work_card active">
                         <div class="icon">
                             <img src="assets/images/icons/003-check.png" alt="Requirements Icon">
@@ -448,7 +479,7 @@
                 </div>
 
                 <!-- Step 3 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="work-items">
                     <div class="work_card">
                         <div class="icon">
                             <img src="assets/images/icons/001-list.png" alt="Quote Icon">
@@ -770,6 +801,10 @@
 
     <!-- Scripts Link -->
     <script src="assets/js/jquery.min.js"></script>
+    <!-- Slick slider JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <!-- Scripts Link End-->
@@ -791,6 +826,35 @@
             fileInput.value = "";
             fileNameDiv.style.display = "none";
         }
+    </script>
+
+    <script>
+        $('.work-steps').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
     </script>
 
 </body>

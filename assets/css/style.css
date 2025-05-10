@@ -497,6 +497,14 @@ li {
     z-index: 0;
 }
 
+#how_we_work .work-steps .work-items.slick-slide {
+    margin: 0 15px;
+}
+#how_we_work .work-steps .work-items.slick-slide:not(.slick-active) {
+    opacity: 50%;
+}
+    
+
 #how_we_work .ovrly_vector {
     position: absolute;
     top: 0;
