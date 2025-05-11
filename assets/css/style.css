@@ -591,6 +591,9 @@ li {
     position: relative;
     z-index: 0;
 }
+#banner .b_img img{
+    height: 520px;
+}
 
 #banner .b_img::after {
     position: absolute;
@@ -621,6 +624,43 @@ li {
 #review {
     padding: 60px 0;
 }
+#review .review_contents{
+    position: relative;
+}
+#review .review_contents .slick-dots{
+    position: absolute; 
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#review .review_contents .slick-dots li button{
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+#review .review_contents .slick-dots li.slick-active button{
+    background-color: var(--primary-color);
+    width: 15px;
+    border-radius: 15px;
+}
+
+
+#review .review_contents .review_items.slick-slide {
+    margin: 0 15px;
+}
+#review .review_contents .review_items.slick-slide:not(.slick-active) {
+    opacity: 50%;
+}
+   
 
 #review .review_card {
     padding: 30px;
@@ -668,13 +708,36 @@ li {
     padding: 60px 0;
 }
 
+#blog .blog_slider .blog_items.slick-slide {
+    margin: 0 10px;
+}
+
+#blog .arrows i {
+    color: var(--gray-heavy-color);
+    font-size: 25px;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+
+#blog .arrows i:hover {
+    color: var(--secondary-color);
+    font-size: 25px;
+}
+
 #blog .blog_card {
     border-radius: 16px;
     overflow: hidden;
     background: #fff;
     transition: 0.3s;
-    border: 2px solid transparent;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 2px solid #cccccc5b;
+    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); */
+}
+
+#blog .blog_card:hover {
+    border-color: var(--secondary-color);
+}
+#blog .blog_card:hover .blog_title {
+    color: var(--secondary-color);
 }
 
 #blog .blog_card .blog_img {
@@ -708,6 +771,7 @@ li {
     color: var(--gray-heavy-color);
     /* Tailwind's blue-600 */
     margin-bottom: 12px;
+    line-height: 24px;
 }
 
 #blog .blog_card .blog_tags {
@@ -727,11 +791,6 @@ li {
     transition: background 0.3s;
 }
 
-#blog .blog_card .blog_card--border .tag {
-    border: 1px solid #3b82f6;
-    color: #3b82f6;
-    background: transparent;
-}
 
 /* ==================  Blog End  ================== */
 

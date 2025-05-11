@@ -1,0 +1,598 @@
+@media(max-width:575.98px) {
+
+    .common_head h4 {
+        font-size: 24px;
+        padding-right: 35px;
+        margin-bottom: 14px;
+    }
+
+    .common_head .line {
+        right: 0px;
+        bottom: -30%;
+        transform: translateY(-50%);
+    }
+
+    /* =========================
+            Navigation 
+    ========================= */
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .navbar-toggler:hover {
+        color: var(--secondary-color);
+        border-color: var(--secondary-color);
+    }
+
+    .navbar .nav-right ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    .navbar .nav-right ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar .trial_btn {
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar .signin_btn {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Optional: style collapsed menu items */
+    .navbar-collapse {
+        background-color: #fff;
+        /* Or your preferred color */
+        padding: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0;
+    }
+
+    /* =========================
+            Navigation 
+    ========================= */
+
+
+    /* =========================
+            Banner 
+    ========================= */
+
+    #bs .bs_content .bs_items img {
+        height: 200px;
+    }
+
+    #bs .bs_content .bs_items .ovrly {
+        width: inherit;
+    }
+
+    #bs .bs_content .bs_items .ovrly p {
+        font-size: 12px;
+        line-height: inherit;
+        padding: 10px 0 10px 0;
+    }
+
+    #bs .bs_content .bs_items .ovrly h2 {
+        font-size: 18px;
+    }
+
+    .trial_btn {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+    /* ========================= */
+    /* Banner */
+    /* ========================= */
+
+    /* =========================
+            Experience 
+    ========================= */
+
+    #experience {
+        padding: 40px 0 20px 0;
+    }
+
+    #experience .mobile_exp_col {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        /* space between cards */
+        padding: 10px;
+    }
+
+    #experience .mobile_exp_col .experience_card {
+        width: 140px;
+        padding: 10px;
+        height: 125px;
+        margin: 12px 0;
+    }
+
+    #experience .experience_right .experience_card h6 {
+        font-size: 38px;
+    }
+
+    #experience .experience_right .experience_card h6 {
+        font-size: 38px;
+    }
+
+    #experience .experience_right .experience_card p {
+        font-size: 14px;
+        padding-right: 0;
+    }
+
+    /* ========================= */
+    /* Experience */
+    /* ========================= */
+
+    /* =========================
+            About 
+    ========================= */
+
+    #about {
+        padding: 20px 0;
+    }
+
+    #about .about_img {
+        margin-top: 20px;
+    }
+
+    /* ========================= */
+    /* About */
+    /* ========================= */
+
+    /* =========================
+            Service 
+    ========================= */
+
+    #service {
+        padding: 20px 0;
+    }
+
+    /* ========================= */
+    /* Service */
+    /* ========================= */
+
+    /* =========================
+            Work 
+    ========================= */
+
+    #how_we_work {
+        padding: 20px 0;
+    }
+
+    #how_we_work .work-steps .work_card .icon img {
+        width: 25px;
+    }
+
+    #how_we_work .work-steps .work_card h5 {
+        font-size: 13px;
+    }
+
+    #how_we_work .work-steps .work_card p {
+        font-size: 12px;
+        padding: 5px 0;
+    }
+
+    /* ========================= */
+    /* Work */
+    /* ========================= */
+
+    /* =========================
+            Banner 
+    ========================= */
+
+    #banner .b_img img {
+        height: 200px;
+    }
+
+    /* ========================= */
+    /* Banner */
+    /* ========================= */
+
+
+    /* =========================
+            Review 
+    ========================= */
+
+    #review {
+        padding: 20px 0;
+    }
+
+    #review .review_card {
+        padding: 15px;
+    }
+
+    #review .review_card p {
+        font-size: 14px;
+    }
+
+    /* ========================= */
+    /* Review */
+    /* ========================= */
+
+    /* =========================
+            Blog 
+    ========================= */
+
+    #blog {
+        padding: 40px 0 20px 0;
+    }
+
+    #blog .blog_slider .blog_items.slick-slide {
+        margin: 0 5px;
+    }
+
+    #blog .arrows {
+        margin: 20px 0;
+    }
+
+    /* =======================
+            Blog
+    ======================= */
+
+    /* =========================
+            Trial 
+    ========================= */
+
+    #trial {
+        padding: 20px 0;
+    }
+
+    #trial .trail_image {
+        display: none;
+
+    }
+
+    .trial_form .row>div {
+        flex: unset;
+        width: 100%;
+    }
+
+    /* ========================= */
+    /* Trial */
+    /* ========================= */
+
+    #footer .footer_quick_menu,
+    #footer .footer_social,
+    #footer .footer_desp {
+        text-align: center;
+    }
+
+    #footer .footer_quick_menu .footer_menu {
+        columns: 1;
+    }
+
+}
+
+@media(min-width:576px) and (max-width:767.98px) {
+
+    .common_head h4 {
+        font-size: 24px;
+        padding-right: 35px;
+        margin-bottom: 14px;
+    }
+
+    .common_head .line {
+        right: 0px;
+        bottom: -30%;
+        transform: translateY(-50%);
+    }
+
+    /* =========================
+            Navigation 
+    ========================= */
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .navbar-toggler:hover {
+        color: var(--secondary-color);
+        border-color: var(--secondary-color);
+    }
+
+    .navbar .nav-right ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    .navbar .nav-right ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar .trial_btn {
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar .signin_btn {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Optional: style collapsed menu items */
+    .navbar-collapse {
+        background-color: #fff;
+        /* Or your preferred color */
+        padding: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0;
+    }
+
+    /* =========================
+            Navigation 
+    ========================= */
+
+
+    /* =========================
+            Banner 
+    ========================= */
+
+    #bs .bs_content .bs_items img {
+        height: 300px;
+    }
+
+    #bs .bs_content .bs_items .ovrly {
+        width: inherit;
+    }
+
+    #bs .bs_content .bs_items .ovrly p {
+        font-size: 12px;
+        line-height: inherit;
+        padding: 10px 0 10px 0;
+    }
+
+    #bs .bs_content .bs_items .ovrly h2 {
+        font-size: 18px;
+    }
+
+    .trial_btn {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+    /* ========================= */
+    /* Banner */
+    /* ========================= */
+
+    /* =========================
+            Experience 
+    ========================= */
+
+    #experience {
+        padding: 40px 0 20px 0;
+    }
+
+    #experience .mobile_exp_col {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        /* space between cards */
+        padding: 10px;
+    }
+
+    #experience .mobile_exp_col .experience_card {
+        width: 140px;
+        padding: 10px;
+        height: 125px;
+        margin: 12px 0;
+    }
+
+    #experience .experience_right .experience_card h6 {
+        font-size: 38px;
+    }
+
+    #experience .experience_right .experience_card h6 {
+        font-size: 38px;
+    }
+
+    #experience .experience_right .experience_card p {
+        font-size: 14px;
+        padding-right: 0;
+    }
+
+    /* ========================= */
+    /* Experience */
+    /* ========================= */
+
+    /* =========================
+            About 
+    ========================= */
+
+    #about {
+        padding: 20px 0;
+    }
+
+    #about .about_img {
+        margin-top: 20px;
+    }
+
+    /* ========================= */
+    /* About */
+    /* ========================= */
+
+    /* =========================
+            Service 
+    ========================= */
+
+    #service {
+        padding: 20px 0;
+    }
+
+    /* ========================= */
+    /* Service */
+    /* ========================= */
+
+    /* =========================
+            Work 
+    ========================= */
+
+    #how_we_work {
+        padding: 20px 0;
+    }
+
+    #how_we_work .work-steps .work_card .icon img {
+        width: 25px;
+    }
+
+    #how_we_work .work-steps .work_card h5 {
+        font-size: 13px;
+    }
+
+    #how_we_work .work-steps .work_card p {
+        font-size: 12px;
+        padding: 5px 0;
+    }
+
+    /* ========================= */
+    /* Work */
+    /* ========================= */
+
+    /* =========================
+            Banner 
+    ========================= */
+
+    #banner .b_img img {
+        height: 300px;
+    }
+
+    /* ========================= */
+    /* Banner */
+    /* ========================= */
+
+
+    /* =========================
+            Review 
+    ========================= */
+
+    #review {
+        padding: 20px 0;
+    }
+
+    #review .review_card {
+        padding: 15px;
+    }
+
+    #review .review_card p {
+        font-size: 14px;
+    }
+
+    /* ========================= */
+    /* Review */
+    /* ========================= */
+
+    /* =========================
+            Blog 
+    ========================= */
+
+    #blog {
+        padding: 40px 0 20px 0;
+    }
+
+    #blog .blog_slider .blog_items.slick-slide {
+        margin: 0 5px;
+    }
+
+    #blog .arrows {
+        margin: 20px 0;
+    }
+
+    /* =======================
+            Blog
+    ======================= */
+
+    /* =========================
+            Trial 
+    ========================= */
+
+    #trial {
+        padding: 20px 0;
+    }
+
+    #trial .trail_image {
+        display: none;
+
+    }
+
+    .trial_form .row>div {
+        flex: unset;
+        width: 100%;
+    }
+
+    /* ========================= */
+    /* Trial */
+    /* ========================= */
+
+    #footer .footer_quick_menu,
+    #footer .footer_social,
+    #footer .footer_desp {
+        text-align: center;
+    }
+
+    #footer .footer_quick_menu .footer_menu {
+        columns: 2;
+    }
+
+    #review .review_contents .review_items.slick-slide:not(.slick-active) {
+        opacity: 100%;
+    }
+
+    #how_we_work .work-steps .work-items.slick-slide:not(.slick-active) {
+        opacity: 100%;
+    }
+
+}
+
+@media(min-width:768px) and (max-width:991.98px) {
+    #experience .mobile_exp_col .experience_card {
+        width: 240px;
+        padding: 10px;
+        height: 185px;
+        margin: 24px 0;
+    }
+
+    #experience .experience_right .experience_card h6 {
+        font-size: 42px;
+    }
+
+    #experience .experience_right .experience_card p {
+        font-size: 16px;
+        padding-right: 0;
+    }
+
+    #trial .trail_image {
+        display: none;
+
+    }
+
+    #review .review_contents .review_items.slick-slide:not(.slick-active) {
+        opacity: 100%;
+    }
+
+    #how_we_work .work-steps .work-items.slick-slide:not(.slick-active) {
+        opacity: 100%;
+    }
+}
+
+@media(min-width:992px) and (max-width:1100.98px) {}
+
+@media(min-width:1200px) and (max-width:1399.98px) {}
+
+@media(min-width:1400px) {}
