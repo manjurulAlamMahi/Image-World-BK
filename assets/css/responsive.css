@@ -273,6 +273,34 @@
         columns: 1;
     }
 
+    /* ========================= */
+    /* Footer */
+    /* ========================= */
+
+    #pageTitle .page_img {
+        height: 180px;
+        object-fit: cover;
+    }
+
+    #pageTitle .ovrly {
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+
+    #pageTitle .ovrly h2 {
+        font-size: 40px;
+    }
+
+    #serviceDetails {
+        padding: 30px 0;
+    }
+
+    #serviceDetails .service_img {
+        height: 285px;
+        width: 100%;
+        /* object-fit: cover; */
+    }
+
 }
 
 @media(min-width:576px) and (max-width:767.98px) {
@@ -558,9 +586,29 @@
         opacity: 100%;
     }
 
+    #service .service_items .serv_content .buttons .detailsBtn {
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+
+    .ordernowBtn {
+        padding: 4px 13px;
+        font-size: 14px;
+    }
+
 }
 
 @media(min-width:768px) and (max-width:991.98px) {
+    #service .service_items .serv_content .buttons .detailsBtn {
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+
+    .ordernowBtn {
+        padding: 4px 13px;
+        font-size: 14px;
+    }
+
     #experience .mobile_exp_col .experience_card {
         width: 240px;
         padding: 10px;
