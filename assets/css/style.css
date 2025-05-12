@@ -3,6 +3,7 @@
 :root {
     --primary-color: #8900F4;
     --secondary-color: #1E77F4;
+    --light-color: #E9F1FE;
     --gray-heavy-color: #374151;
     --gray-medium-color: #4B5563;
     --gray-light-color: #6B7280;
@@ -513,7 +514,8 @@ li {
     font-weight: bold;
     color: var(--secondary-color);
 }
-#service .service_items .serv_content .buttons .detailsBtn{
+
+#service .service_items .serv_content .buttons .detailsBtn {
     padding: 4px 16px;
     font-size: 16px;
     border: 1px solid var(--gray-medium-color);
@@ -1244,3 +1246,212 @@ li {
 }
 
 /* ================== Service Details End ================== */
+
+/* ================== For You Start ================== */
+#forYou {
+    padding: 60px 0;
+}
+
+#forYou .heading {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#forYou .heading h4 {
+    font-size: 36px;
+    color: var(--gray-heavy-color);
+    font-weight: 700;
+    padding: 0 150px;
+}
+
+#forYou .heading p {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray-medium-color);
+    padding: 10px 0;
+}
+
+#forYou .whyChooseThisService .foryou_card {
+    background: #fff;
+    padding: 24px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all linear .3s;
+}
+
+#forYou .whyChooseThisService .foryou_card:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+#forYou .whyChooseThisService .foryou_card:hover h5,
+#forYou .whyChooseThisService .foryou_card:hover p,
+#forYou .whyChooseThisService .foryou_card:hover .foryou_card_top .foryou_card_icon i,
+#forYou .whyChooseThisService .foryou_card:hover .foryou_card_top .foryou_card_title h5 {
+    color: #fff;
+}
+
+#forYou .whyChooseThisService .foryou_card .foryou_card_top {
+    display: flex;
+    align-items: center;
+    gap: 0 24px;
+}
+
+#forYou .whyChooseThisService .foryou_card .foryou_card_top .foryou_card_icon i {
+    font-size: 40px;
+    color: var(--gray-medium-color);
+}
+
+#forYou .whyChooseThisService .foryou_card .foryou_card_top .foryou_card_title h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--gray-medium-color);
+    margin-bottom: 10px;
+}
+
+#forYou .whyChooseThisService .foryou_card .p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gray-light-color);
+    padding-bottom: 16px;
+}
+
+/* ================== For You End ================== */
+
+/* ================== FAQ Start ================== */
+#faq {
+    padding: 60px 0;
+    background: var(--light-color);
+}
+
+/* Style for accordion wrapper */
+#faq .faq_contents.accordion {
+    border: none;
+}
+
+/* Style for each accordion item */
+#faq .faq_contents .accordion-item {
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border: none;
+}
+
+/* Style the accordion button (header) */
+#faq .faq_contents .accordion-button {
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 1rem 1.2rem;
+    background-color: transparent;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: none; /* Remove default Bootstrap shadow */
+}
+
+/* Hover and focus states */
+#faq .faq_contents .accordion-button:hover,
+#faq .faq_contents .accordion-button:focus {
+    color: #3b82f6;
+    background-color: #f8f9fa;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Hide default Bootstrap chevron */
+#faq .faq_contents .accordion-button::after {
+    display: none;
+}
+
+/* Custom icon on the right */
+#faq .faq_contents .accordion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#faq .faq_contents .accordion-button::before {
+    content: '\f078'; /* FontAwesome chevron-down */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1rem;
+    color: #3b82f6;
+    background-color: #edf2ff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+}
+
+/* Rotate icon when open */
+#faq .faq_contents .accordion-button:not(.collapsed)::before {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Accordion body content */
+#faq .faq_contents .accordion-body {
+    font-size: 0.95rem;
+    color: #555;
+    padding: 1rem 1.2rem;
+}
+
+
+/* ================== FAQ End ================== */
+
+/* ================== Projects Image Start ================== */
+#projects_image {
+    padding: 60px 0 40px 0;
+    background: var(--light-color);
+}
+#projects_image .projects_image_title h4 {
+    font-size: 36px;
+    color: var(--gray-heavy-color);
+    font-weight: 700;
+    padding: 0 150px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#projects_image .projects_image_main img{
+    width: 100%;
+    height: 700px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#projects_image .projects_image_slider,
+#projects_image .projects_image_slider .slick-list.draggable .slick-track{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    margin-top: 20px !important;
+}
+
+#projects_image .projects_image_slider.slick-slider{
+    margin-top: 20px !important;
+}
+#projects_image .projects_image_slider .projects_image_items.slick-slide.slick-current.slick-active{
+    border: 2px solid #3b82f6;
+    border-radius: 10px;
+}
+#projects_image .projects_image_slider .projects_image_items{
+    width: 180px !important;
+    height: 140px;
+}
+#projects_image .projects_image_slider .projects_image_items img{
+    width: 100%;
+    height: 140px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* ================== Projects Image End ================== */

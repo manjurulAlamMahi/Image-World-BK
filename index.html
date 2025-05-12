@@ -882,6 +882,36 @@
     </script>
 
     <script>
+        const accordions = document.querySelectorAll('.accordion');
+
+        accordions.forEach(accordion => {
+            const header = accordion.querySelector('.accordion-header');
+            header.addEventListener('click', () => {
+                accordion.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <script>
+        $('.projects_image_main').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.projects_image_slider'
+        });
+        $('.projects_image_slider').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.projects_image_main',
+            dots: false,
+            centerMode: false,
+            focusOnSelect: true,
+            arrows: false,
+        });
+    </script>
+
+    <script>
         $('.work-steps').slick({
             centerMode: true,
             centerPadding: '60px',
