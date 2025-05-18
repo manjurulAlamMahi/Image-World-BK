@@ -1,5 +1,21 @@
 @media(max-width:575.98px) {
 
+    #portfolio .ovrly_shape {
+        display: none;
+    }
+
+    #portfolio .portfolio_lists .port_cate ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #portfolio .portfolio_lists .port_cate ul li button {
+        padding: 4px 10px;
+        font-size: 12px;
+        margin: 5px;
+    }
+
     .common_head h4 {
         font-size: 24px;
         padding-right: 35px;

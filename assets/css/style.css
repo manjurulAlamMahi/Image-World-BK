@@ -1348,7 +1348,8 @@ li {
     background-color: transparent;
     color: #000;
     transition: background-color 0.3s, color 0.3s;
-    box-shadow: none; /* Remove default Bootstrap shadow */
+    box-shadow: none;
+    /* Remove default Bootstrap shadow */
 }
 
 /* Hover and focus states */
@@ -1374,7 +1375,8 @@ li {
 }
 
 #faq .faq_contents .accordion-button::before {
-    content: '\f078'; /* FontAwesome chevron-down */
+    content: '\f078';
+    /* FontAwesome chevron-down */
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 1rem;
@@ -1413,6 +1415,7 @@ li {
     padding: 60px 0 40px 0;
     background: var(--light-color);
 }
+
 #projects_image .projects_image_title h4 {
     font-size: 36px;
     color: var(--gray-heavy-color);
@@ -1421,37 +1424,111 @@ li {
     margin-bottom: 20px;
     text-align: center;
 }
-#projects_image .projects_image_main img{
+
+#projects_image .projects_image_main img {
     width: 100%;
     height: 700px;
     max-width: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
+
 #projects_image .projects_image_slider,
-#projects_image .projects_image_slider .slick-list.draggable .slick-track{
+#projects_image .projects_image_slider .slick-list.draggable .slick-track {
     display: flex !important;
     justify-content: space-between !important;
     align-items: center;
     margin-top: 20px !important;
 }
 
-#projects_image .projects_image_slider.slick-slider{
+#projects_image .projects_image_slider.slick-slider {
     margin-top: 20px !important;
 }
-#projects_image .projects_image_slider .projects_image_items.slick-slide.slick-current.slick-active{
+
+#projects_image .projects_image_slider .projects_image_items.slick-slide.slick-current.slick-active {
     border: 2px solid #3b82f6;
     border-radius: 10px;
 }
-#projects_image .projects_image_slider .projects_image_items{
+
+#projects_image .projects_image_slider .projects_image_items {
     width: 180px !important;
     height: 140px;
 }
-#projects_image .projects_image_slider .projects_image_items img{
+
+#projects_image .projects_image_slider .projects_image_items img {
     width: 100%;
     height: 140px;
     max-width: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
+
 /* ================== Projects Image End ================== */
+
+/* ================== Portfolio Start ================== */
+#portfolio {
+    padding: 60px 0;
+    background-image: url('../images/vectors/v-5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+#portfolio::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(251, 245, 255, 0.8) 100%);
+    z-index: -1;
+}
+
+#portfolio .portfolio_lists .port_cate {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+        linear-gradient(91.04deg, rgba(233, 241, 254, 0.4) -6.54%, rgba(243, 230, 254, 0.4) 113.29%);
+    border: 1px solid var(--secondary-color);
+    border-radius: 25px;
+    padding: 16px;
+    margin-bottom: 40px;
+
+}
+
+#portfolio .portfolio_lists .port_cate ul li button {
+    padding: 4px 16px;
+    font-size: 15px;
+    color: var(--gray-medium-color);
+    text-transform: capitalize;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all linear .3s;
+    background: #fff;
+    margin: 8px;
+}
+#portfolio .portfolio_lists .port_cate ul li button:hover,
+#portfolio .portfolio_lists .port_cate ul li button.active {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+#portfolio .portfolio_lists .port_contents .port_img {
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color);
+    margin-bottom: 24px;
+}
+#portfolio .portfolio_lists .port_contents .port_img img {
+    border-radius: 10px;
+}
+
+#portfolio .ovrly_shape {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    /* width: 100%; */
+    z-index: -1;
+}
+
+/* ================== Portfolio End ================== */
