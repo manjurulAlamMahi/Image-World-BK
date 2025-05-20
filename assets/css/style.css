@@ -807,7 +807,8 @@ li {
     padding: 60px 0;
 }
 
-#blog .blog_slider .blog_items.slick-slide {
+#blog .blog_slider .blog_items.slick-slide,
+#blog .blog_details_slider .blog_items.slick-slide {
     margin: 0 10px;
 }
 
@@ -890,6 +891,146 @@ li {
     /* gray-700 */
     transition: background 0.3s;
 }
+
+#blog_details {
+    padding: 60px 0;
+    background: #fff;
+}
+
+#blog_details .blog_details_content{
+    padding: 20px;
+}
+
+#blog_details .blog_details_content img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#blog_details .blog_details_content h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--gray-heavy-color);
+    /* Tailwind's blue-600 */
+    margin-bottom: 12px;
+    line-height: 24px;
+}
+
+#blog_details .blog_details_content h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--gray-heavy-color);
+    /* Tailwind's blue-600 */
+    margin-bottom: 12px;
+    line-height: 24px;
+}
+
+#blog_details .blog_details_content p{
+    color: var(--gray-medium-color);
+    /* Tailwind's gray-700 */
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+#blog_details .blog_details_content ul{
+    color: var(--gray-medium-color);
+    /* Tailwind's gray-700 */
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#blog_details .blog_details_content ol{
+    color: var(--gray-medium-color);
+    /* Tailwind's gray-700 */
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+#blog_details .blog_details_content h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--gray-heavy-color);
+    /* Tailwind's blue-600 */
+    margin-bottom: 12px;
+    line-height: 24px;
+}
+
+#blog_details .blog_details_content h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--gray-heavy-color);
+    /* Tailwind's blue-600 */
+    margin-bottom: 12px;
+    line-height: 24px;
+}
+
+#blog_details .blog_details_content blockquote{
+    color: var(--gray-medium-color);
+    /* Tailwind's gray-700 */
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    border-left: 4px solid #3b82f6;
+    padding-left: 20px;
+}
+
+#blog_details .blog_details_content pre{
+    color: var(--gray-medium-color);
+    /* Tailwind's gray-700 */
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+#blog_details .blog_details_sidebar .sidebar-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#blog_details .blog_details_sidebar .latest-blogs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#blog_details .blog_details_sidebar .blog-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 15px;
+}
+
+#blog_details .blog_details_sidebar .blog-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#blog_details .blog_details_sidebar .blog-item p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
 
 
 /* ==================  Blog End  ================== */
@@ -1508,6 +1649,7 @@ li {
     background: #fff;
     margin: 8px;
 }
+
 #portfolio .portfolio_lists .port_cate ul li button:hover,
 #portfolio .portfolio_lists .port_cate ul li button.active {
     background: var(--secondary-color);
@@ -1519,6 +1661,7 @@ li {
     border: 1px solid var(--secondary-color);
     margin-bottom: 24px;
 }
+
 #portfolio .portfolio_lists .port_contents .port_img img {
     border-radius: 10px;
 }
@@ -1562,6 +1705,7 @@ li {
     /* width: 100%; */
     z-index: -1;
 }
+
 .blog_card {
     background: #fff;
     border-radius: 10px;
@@ -1583,6 +1727,7 @@ li {
     background-size: cover;
     background-position: center;
 }
+
 .blog_img a img {
     width: 100%;
     height: 100%;
@@ -1602,7 +1747,7 @@ li {
     margin-bottom: 10px;
 }
 
-.blog_title a{
+.blog_title a {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px;
