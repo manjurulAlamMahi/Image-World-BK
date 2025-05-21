@@ -747,3 +747,66 @@
         font-size: 14px;
     }
 }
+
+@media (max-width: 575.98px) {
+    /* Contact Address Section */
+    #contact_address {
+        padding: 50px 15px;
+        text-align: center;
+    }
+
+    .ca_left h2 {
+        font-size: 28px;
+    }
+
+    .ca_left h6 {
+        font-size: 20px;
+    }
+
+    .ca_right {
+        margin-top: 30px;
+    }
+
+    .address_list li {
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .social_list {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* Contact Form Section */
+    #contact_form {
+        padding: 50px 15px;
+    }
+
+    .common_head h4 {
+        font-size: 24px;
+    }
+
+    .common_head p {
+        font-size: 14px;
+    }
+
+    .cf_map iframe {
+        min-height: 300px;
+    }
+
+    .cf_form {
+        padding: 20px 15px;
+        margin-top: 30px;
+    }
+
+    .cf_form .form-control {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .form_submit {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+}
