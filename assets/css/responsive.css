@@ -810,3 +810,148 @@
         font-size: 14px;
     }
 }
+
+@media (max-width: 575.98px) {
+    #about {
+        padding: 40px 20px;
+    }
+
+    #about .about_head h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    #about .about_head h2 span {
+        font-size: 22px;
+    }
+
+    #about .about_content h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    #about .about_content p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .container, .row, .col-lg-8, .col-lg-11 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .about_head, .about_content {
+        text-align: left;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #why_us {
+        padding: 40px 15px;
+    }
+
+    #why_us .common_head h4 {
+        font-size: 24px;
+    }
+
+    #why_us .wu_content {
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #why_us .wu_content .wu_title {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    #why_us .wu_content .wu_title img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #why_us .wu_content .wu_title h6 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    #why_us .wu_content p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    #why_us .ovrly_vector img {
+        width: 100%;
+        height: auto;
+    }
+
+    .ovrly_vector {
+        display: none; /* optional: hide decorative vector image to reduce clutter */
+    }
+}
+
+@media (max-width: 575.98px) {
+    #gallery {
+        padding: 40px 15px;
+    }
+
+    #gallery .gal_img img {
+        height: auto !important; /* removes fixed height */
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    #gallery .gal_img .ovrly a {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+
+    #gallery .common_head h4 {
+        font-size: 24px;
+    }
+
+    #gallery .common_head span {
+        font-size: 14px;
+    }
+
+    #gallery .row.match-height {
+        flex-direction: column;
+    }
+
+    #gallery .col-lg-4,
+    #gallery .col-lg-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #gallery .gal_img {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .client_item {
+        padding: 10px;
+    }
+
+    .client_item img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #client .common_head h4 {
+        font-size: 24px;
+    }
+
+    #client .common_head span {
+        font-size: 14px;
+    }
+}
+
+
+
