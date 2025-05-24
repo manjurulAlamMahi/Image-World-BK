@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logoo</title>
+
+    <!-- Scripts Link -->
+    <script src="assets/js/fontawesome.js"></script>
+    <!-- Scripts Link End-->
+
+    <!-- Css Links -->
+
+    <!-- Slick slider core CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/materialdesignicons-light.min.css">
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Css Links End -->
+
+    <!-- Style -->
+    <!-- Style End -->
+</head>
+
+<body>
+
+    <!-- ========================================== Navigation Part ===================================================== -->
+    <nav id="main_menu" class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/site/logo.png" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav-right">
+                    <ul>
+                        <li>
+                            <button type="button" class="trial_btn">Trial Now <span><i
+                                        class="mdi mdi-arrow-top-right"></i></span></button>
+                        </li>
+                        <li>
+                            <a class="signin_btn" href="#">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+    </nav>
+    <!-- ========================================== Navigation Part End ================================================= -->
+
+    <!-- ========================================== Trial Part Start ================================================= -->
+    <section id="trial_banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="common_head">
+                        <span>GET 2 FREE EDITS</span>
+                        <h4 class="m-0 p-0">Try Path’s image editing services for yourself</h4>
+                        <p>Transform your photo editing workflow with pixel perfect
+                            edits, done by humans, every time—and see why over
+                            40,000 photographers and businesses trust us with their
+                            image editing,</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="trial_ban_images m-auto">
+                        <div class="before_img">
+                            <img src="assets/images/trial/b-1.jpg" alt="">
+                        </div>
+                        <div class="after_img">
+                            <img src="assets/images/trial/b-2.jpg" alt="">
+                        </div>
+                        <div class="ovrly">
+                            <img src="assets/images/trial/curve-arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trial">
+        <div class="container">
+            <div class="common_head text-center mb-5">
+                <span>Free Trial</span>
+                <h4 class="m-0 p-0">Get Started With the FREE TRIAL?</h4>
+                <p>Complete the form, upload your images, and complete your free trial project in 1 hour.</p>
+            </div>
+            <div class="mb-3"></div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form class="trial_form" onsubmit="event.preventDefault()" style="background: #F3F4F6; padding: 20px 40px; border-radius: 25px; ">
+                        <div class="file-upload my-3" onclick="document.getElementById('fileInput').click();">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="left">
+                                    <p><strong>Drag & Drop Files Here</strong></p>
+                                    <p>or <u>Browse file</u></p>
+                                </div>
+                                <div class="right">
+                                    <div class="upload-icon"><i style="font-size: 60px;"
+                                            class="mdi mdi-cloud-upload-outline"></i></div>
+                                    <input type="file" id="fileInput" onchange="handleFileChange(event)" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="custom-checkbox-grid">
+                            <label><input type="checkbox" name="services" value="Clipping Path" />
+                                Clipping Path
+                            </label>
+                            <label><input type="checkbox" name="services" value="Image Masking" />
+                                Image Masking
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services" value="Photo Retouching" />
+                                Photo Retouching
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services" value="Background Removal" />Background Removal
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services" value="Shadow Creation" />Shadow Creation
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services" value="Colour Correction" />Colour Correction
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services" value="Image Restoration" />Image Restoration
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services" value="Image Resizing" />Image Resizing
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services" value="Ghost Mannequin" />Ghost Mannequin
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services" value="Vector Conversion" />Vector Conversion
+                            </label>
+                        </div>
+
+                        <div id="fileName" class="file-name" style="display:none;">
+                            📄 One file attached here & file name 01...
+                            <i onclick="removeFile()">🗑️</i>
+                        </div>
+
+                        <label>Select Service</label>
+                        <div class="form_select">
+                            <select>
+                                <option>Select the Service</option>
+                            </select>
+                            <div class="arrow">
+                                <i class="fas fa-long-arrow-down"></i>
+                            </div>
+                        </div>
+
+                        <label>Massage</label>
+                        <textarea placeholder="Enter your massage"></textarea>
+
+                        <label>Mail</label>
+                        <input type="email" placeholder="Enter your mail" />
+
+
+
+                        <div class="checkbox d-flex align-items-center">
+                            <input type="checkbox" class="me-2" id="terms" />
+                            <label class="p-0 m-0" for="terms">I have read and agree to the Terms & Conditions</label>
+                        </div>
+
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================================== Trial Part End ================================================= -->
+
+    <!-- ========================================== Footer Part End ================================================= -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Logo and Contact -->
+                <div class="col-md-5 mb-4 justify-content-center">
+                    <div class="footer_desp">
+                        <a href="#" class="footer_logo"><img width="100px" src="assets/images/site/logo.png" alt=""></a>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                            consequuntur
+                            magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <p><strong>Call:</strong> +880 8888 88888</p>
+                        <p><strong>Mail:</strong> yourmail@mail.com</p>
+                        <p><strong>Location:</strong> Enter your Company address, City, Country name 2024</p>
+                    </div>
+                </div>
+
+                <!-- Company Links -->
+                <div class="col-md-4 mb-4">
+                    <div class="footer_quick_menu">
+                        <h5 class="footer_header">Company</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-3 mb-4">
+                    <div class="footer_social">
+                        <h5 class="footer_header">Social Media</h5>
+                        <ul class="footer_social_links">
+                            <li><a href="#">↗ Facebook</a></li>
+                            <li><a href="#">↗ Tiktok</a></li>
+                            <li><a href="#">↗ Instagram</a></li>
+                            <li><a href="#">↗ LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="bg-secondary">
+
+            <!-- WhatsApp + Email Subscription -->
+            <div class="row align-items-center py-3">
+                <div class="col-md-6 d-flex align-items-center mb-3 mb-md-0 gap-3">
+                    <div class="icon">
+                        <img width="40" src="assets/images/icons/whatsapp.png" alt="">
+                    </div>
+                    <div>
+                        <small class="d-block text-white-50">What's App</small>
+                        <strong>+880 8888 88888</strong>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form class="footer_subscription d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your Mail Address">
+                        <button class="btn btn-outline-info">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="bg-secondary">
+
+            <!-- Bottom Bar -->
+            <div class="d-flex justify-content-between pb-3">
+                <small class="text-white-50">Copy Right ©2025</small>
+                <small class="text-white-50">Design and Developers</small>
+            </div>
+        </div>
+    </section>
+    <!-- ========================================== Footer Part End ================================================= -->
+
+
+    <!-- Scripts Link -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Slick slider JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Scripts Link End-->
+
+    <script>
+        function handleFileChange(event) {
+            const fileInput = event.target;
+            const fileNameDiv = document.getElementById("fileName");
+
+            if (fileInput.files.length > 0) {
+                fileNameDiv.style.display = "flex";
+            }
+        }
+
+        function removeFile() {
+            const fileInput = document.getElementById("fileInput");
+            const fileNameDiv = document.getElementById("fileName");
+
+            fileInput.value = "";
+            fileNameDiv.style.display = "none";
+        }
+    </script>
+
+    <script>
+        $('.work-steps').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            arrows: true,
+            nextArrow: '<div class="arrows d-none"><i class="fas fa-chevron-right"></i></div>',
+            prevArrow: '<div class="arrows d-none"><i class="fas fa-chevron-left"></i></div>',
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: false,
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 575,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                }
+            ]
+        });
+        $('#work_left_arrow').click(function () {
+            $('.work-steps').slick('slickPrev');
+        });
+        $('#work_right_arrow').click(function () {
+            $('.work-steps').slick('slickNext');
+        });
+    </script>
+
+    <script>
+        $('.client_slider').each(function () {
+            $(this).slick({
+                centerMode: true,
+                centerPadding: '10px',
+                slidesToShow: 6,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            centerMode: false,
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 575,
+                        settings: {
+                            centerMode: false,
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+
+
+    <script>
+        $('.blog_slider').slick({
+            centerMode: false,
+            slidesToShow: 2,
+            arrows: true,
+            nextArrow: '<div class="arrows d-none"><i class="fas fa-chevron-right"></i></div>',
+            prevArrow: '<div class="arrows d-none"><i class="fas fa-chevron-left"></i></div>',
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: true,
+                        centerMode: false,
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 575,
+                    settings: {
+                        arrows: true,
+                        centerMode: false,
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        arrows: true,
+                        centerMode: false,
+                        slidesToShow: 2
+                    }
+                }
+            ]
+        });
+        $('#blog_left_arrow').click(function () {
+            $('.blog_slider').slick('slickPrev');
+        });
+        $('#blog_right_arrow').click(function () {
+            $('.blog_slider').slick('slickNext');
+        });
+    </script>
+
+    <script>
+        $('.projects_image_main').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.projects_image_slider'
+        });
+        $('.projects_image_slider').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.projects_image_main',
+            dots: false,
+            centerMode: false,
+            focusOnSelect: true,
+            arrows: false,
+        });
+    </script>
+
+    <script>
+        $('.review_contents').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            arrows: false,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: false,
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 575,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                }
+            ]
+        });
+    </script>
+
+    <script>
+        const accordions = document.querySelectorAll('.accordion');
+
+        accordions.forEach(accordion => {
+            const header = accordion.querySelector('.accordion-header');
+            header.addEventListener('click', () => {
+                accordion.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
