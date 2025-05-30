@@ -1013,3 +1013,79 @@
         align-items: center;
     }
 }
+
+@media (max-width: 575.98px) {
+    #pricing .common_head h4 {
+        font-size: 20px;
+    }
+
+    #pricing .common_head p {
+        font-size: 14px;
+    }
+
+    #pricing .pricing_image {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #pricing .pricing_image h4 {
+        font-size: 18px;
+    }
+
+    #pricing .pricing_image h6 {
+        font-size: 16px;
+    }
+
+    #pricing .pricing_image p {
+        font-size: 14px;
+    }
+
+    #pricing .pricing_image img {
+        max-height: 200px;
+        object-fit: contain;
+    }
+
+    #pricing .pricing_form {
+        padding: 20px;
+    }
+
+    #pricing .pricing_form label {
+        font-size: 14px;
+    }
+
+    #pricing .pricing_form .hashes {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    #pricing .pricing_form .hashes p {
+        font-size: 14px;
+    }
+
+    #pricing .pricing_form .turnaround_time label,
+    #pricing .pricing_form .form-check-label {
+        font-size: 14px;
+    }
+
+    #pricing .pricing_form .quality_control {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    #pricing .pricing_form .quality_control span {
+        font-size: 16px;
+    }
+
+    #pricing .pricing_form .total_price {
+        font-size: 18px;
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    #pricing .pricing_form button[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

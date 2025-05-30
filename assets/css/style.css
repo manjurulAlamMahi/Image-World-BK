@@ -2186,9 +2186,150 @@ li {
 
 /* ================== Gallery End ================== */
 
-/* ================== Client Start ================== */
+/* ================== pricing Start ================== */
+#pricing {
+    padding: 60px 0;
+    background-color: #fff;
+}
 
+#pricing .pricing_image h4{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--gray-medium-color);
+    margin-bottom: 15px;
+}
+#pricing .pricing_image h6{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--gray-medium-color);
+    margin-bottom: 15px;
+}
+#pricing .pricing_image h6 span{
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+#pricing .pricing_image p{
+    font-size: 16px;
+    color: var(--gray-light-color);
+    margin-bottom: 0;
+    margin-top: 15px;
+}
 
+#pricing .pricing_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color);
+}
 
+#pricing .pricing_form input[type="text"],
+#pricing .pricing_form input[type="email"],
+#pricing .pricing_form textarea,
+#pricing .pricing_form select {
+    width: 100%;
+    padding: 15px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background-color: #F9FAFB;
+    border: none;
+    font-size: 16px;
+    color: var(--gray-medium-color);
+}
 
-/* ================== Client End ================== */
+#pricing .pricing_form input[type="text"]::placeholder,
+#pricing .pricing_form input[type="email"]::placeholder,
+#pricing .pricing_form textarea::placeholder,
+#pricing .pricing_form select::placeholder {
+    color: var(--gray-light-color);
+}
+
+#pricing .pricing_form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gray-light-color);
+}
+
+#pricing .pricing_form .form_select select {
+    width: 100%;
+    padding-right: 30px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+#pricing .pricing_form .form_select {
+    position: relative;
+}
+
+#pricing .pricing_form .form_select .arrow {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+#pricing .pricing_form .form_select .arrow i {
+    color: var(--primary-color);
+}
+
+#pricing .pricing_form .hashes{
+    margin: 5px 0;
+    display: flex;
+    gap: 15px;
+    align-items: center
+}
+#pricing .pricing_form .hashes p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+}
+#pricing .pricing_form .turnaround_time .form-check {
+    margin-bottom: 6px;
+}
+
+#pricing .pricing_form .form-check-input:checked {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+#pricing .pricing_form .quality_control button {
+    border-radius: 6px;
+    background: #f0f0f0;
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    line-height: 1;
+    padding: 0;
+}
+
+#pricing .pricing_form .total_price {
+    padding: 20px 0;
+    font-size: 22px;
+    color: var(--gray-light-color);
+}
+
+#pricing .pricing_form .total_price span:last-child {
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+#pricing .pricing_form button[type="submit"] {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    background: #9400FF;
+    transition: background 0.3s ease;
+}
+
+#pricing .pricing_form button[type="submit"]:hover {
+    background: #7a00d1;
+}
+
+/* ================== pricing End ================== */
